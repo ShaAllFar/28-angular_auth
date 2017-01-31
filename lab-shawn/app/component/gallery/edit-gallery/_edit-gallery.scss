@@ -1,0 +1,29 @@
+@import '../gallery-item/gallery-item';
+
+.edit{
+clear: both;
+  background: $md-grey;
+  border-radius: $border-radius;
+  margin-bottom: $margin-std;
+  .inner-edit{
+    padding: $padding-std;
+
+  }
+
+  .item-label{
+    font-weight: bold;
+  }
+  input{
+    background: $md-grey;
+    border-bottom: 1px solid $dk-grey;
+    font-size: 3vw;
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+  button{
+    margin: $margin-std 0;
+  }
+}

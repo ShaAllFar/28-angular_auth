@@ -1,0 +1,6 @@
+@import '../../../scss/lib/themes';
+@import '../signup/signup';
+
+.login{
+  @extend .signup;
+}

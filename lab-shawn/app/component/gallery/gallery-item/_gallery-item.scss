@@ -1,0 +1,41 @@
+@import '../../../scss/lib/themes';
+
+.gallery-item{
+  clear: both;
+  .current-item{
+    background: $md-grey;
+    border-radius: $border-radius;
+    // margin-bottom: $margin-std;
+    padding: $padding-std;
+    .item-label{
+      font-weight: bold;
+    }
+  }
+
+  .btn-sec{
+    width: 20%;
+    float:right;
+    margin: $margin-std 0 $margin-std $margin-std;
+    padding: $padding-std;
+    border-radius: $border-radius;
+    border: 2px solid $dk-grey;
+    transition: 350ms all;
+    font-size: 3vw;
+    background: $btn-grey;
+    color: $white;
+
+    &:hover{
+      background: $dk-grey;
+    }
+
+    &:nth-child(odd){
+      background: $white;
+      border: 2px solid $md-grey;
+      transition: 350ms all;
+      color: $dk-grey;
+      &:hover{
+        background: $md-grey;
+      }
+    }
+  }
+}

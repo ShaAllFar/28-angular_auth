@@ -1,3 +1,10 @@
 @import 'lib/reset';
-@import 'lib/base';
 @import 'lib/themes';
+@import 'lib/base';
+
+
+@import '../view/landing/landing';
+@import '../view/home/home';
+@import '../component/landing/signup/signup';
+@import '../component/landing/login/login';
+@import '../component/navbar/navbar';
