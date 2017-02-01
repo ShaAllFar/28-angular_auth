@@ -19,7 +19,7 @@ function CreateGallery($log, galleryService){
       this.gallery.desc = null;
     })
     .catch(err => {
-      $log.error(err.mesasge);
+      $log.error(err.message);
     });
   };
 }

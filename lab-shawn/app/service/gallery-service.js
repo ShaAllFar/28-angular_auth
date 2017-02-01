@@ -7,6 +7,7 @@ function galleryService($q,$log,$http,authService){
 
   let service = {};
   service.galleries = [];
+  
   service.createGallery = function(gallery){
     $log.debug('galleryService.createGallery()');
 
@@ -121,10 +122,10 @@ function galleryService($q,$log,$http,authService){
       return $http.delete(url, config);
     })
     .then(res => {
-      for(let i = 0; i < this.galleries.length; i++){
-        let current = this.galleries[i];
+      for(let i = 0; i < service.galleries.length; i++){
+        let current = service.galleries[i];
         if(current._id === galleryID){
-          service.galleries.splice(1,1);
+          service.galleries.splice(i,1);
           break;
         }
       }

@@ -1,11 +1,14 @@
 @import '../../scss/lib/themes';
 
 .home{
-  h2{
-    clear: both;
-    // margin: $margin-std*2 0;
-  }
-  ul{
-    clear: both;
+  .gallery-item-container{
+    h2{
+      clear: both;
+      // margin: $margin-std*2 0;
+    }
+    ul{
+      clear: both;
+    }
+
   }
 }
