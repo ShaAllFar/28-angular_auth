@@ -9,7 +9,7 @@ module.exports = function(config) {
     autoWatch: true,
     basePath: '',
     frameworks: ['jasmine'],
-    reporters: ['progress'],
+    reporters: ['mocha'],
     logLevel: config.LOG_INFO,
     browsers: ['PhantomJS'],
     singleRun: false,
