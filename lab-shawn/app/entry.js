@@ -7,11 +7,12 @@ const augluar = require('angular');
 const camelcase = require('camelcase');
 const pascalcase = require('pascalcase');
 const uiRouter = require('angular-ui-router');
+const uiBootstrap = require('angular-ui-bootstrap')
 const ngTouch = require('angular-touch');
 const ngAnimate = require('angular-animate');
 const ngFileUpload = require('ng-file-upload');
 
-const cfgram = angular.module('cfgram', [ngTouch, ngAnimate, uiRouter, ngFileUpload]);
+const cfgram = angular.module('cfgram', [ngTouch, ngAnimate, uiRouter, ngFileUpload, uiBootstrap]);
 
 let context = require.context('./config/', true, /\.js$/);
 context.keys().forEach(path => {
